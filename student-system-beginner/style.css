@@ -1,9 +1,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #F4F5F7;
+    background-color: #e2e8f0;
     margin: 0;
     padding: 0;
+    height: 40px;
 }
 
 
@@ -40,6 +41,7 @@ body {
 .container {
     width: 100%;
     margin: 40px auto;
+
 
 }
 
@@ -200,7 +202,15 @@ select {
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
+
+    min-height: 75vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
 }
+
 
 .dashboard-header {
     display: flex;
