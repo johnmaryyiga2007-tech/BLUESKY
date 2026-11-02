@@ -32,7 +32,10 @@ body {
 .nav-links a:hover, .nav-links a.active {
     color: #2b6cb0;
 }
-
+.logo {
+    height: 100px;
+    width: 100px;
+}
 
 .container {
     width: 100%;
