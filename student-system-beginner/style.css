@@ -10,11 +10,12 @@ body {
 
 .navbar {
     background-color: #ffffff;
-    padding: 15px 30px;
+    padding: 30px 30px;
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 40px;
 }
 
 .nav-brand {
@@ -184,7 +185,7 @@ select {
     border: 1px solid #e53e3e;
 }
 
-/* UTILITIES */
+
 .hidden {
     display: none !important;
 }
