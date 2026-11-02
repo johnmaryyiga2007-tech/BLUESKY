@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Student System</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html" class="active">Login</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="form-wrapper narrow">
+            <h2>Student Portal Login</h2>
+            <div id="messageBox" class="message-box hidden"></div>
+
+            <form id="loginForm" onsubmit="return loginUser()">
+                <div class="form-group">
+                    <label for="loginIdentifier">Username / Email</label>
+                    <input type="text" id="loginIdentifier" placeholder="Enter Registration Number or Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="loginPassword" required>
+                        <button type="button" class="toggle-password" onclick="togglePassword('loginPassword')">Show</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn primary-btn block-btn">Login</button>
+            </form>
+            <p class="form-footer">New student? <a href="register.html">Create an account here</a></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

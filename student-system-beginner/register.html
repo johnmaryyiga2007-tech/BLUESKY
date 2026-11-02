@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Student System</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="register.html" class="active">Register</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="form-wrapper">
+            <h2>Student Registration</h2>
+            <div id="messageBox" class="message-box hidden"></div>
+            
+            <form id="registerForm" onsubmit="return registerUser()">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regNumber">Registration Number</label>
+                    <input type="text" id="regNumber" placeholder="e.g.,2026/001" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">Year of Study</label>
+                        <select id="year" required>
+                            <option value="">Select Year</option>
+                            <option value="Year 1">Year 1</option>
+                            <option value="Year 2">Year 2</option>
+                            <option value="Year 3">Year 3</option>
+                            <option value="Year 4">Year 4</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" required>
+                        <option value="">Select Course</option>
+                        <option value="Bachelor of Computer Science">Bachelor of Computer Science</option>
+                        <option value="Bachelor of Information Technology">Bachelor of Information Technology</option>
+                        <option value="Diploma in Information Technology">Diploma in Information Technology</option>
+                        <option value="Bachelor of Economics and Statistics">Bachelor of Economics and Statistics</option>
+                        <option value="Bachelor of Sience in Agriculture">Bachelor of Sience in Agriculture</option>
+                        <option value="Bachelor of Education">Bachelor of Education</option>
+                        <option value="Bachelor of Information and Journalism">Bachelor of Information and Journalism</option>
+                        <option value="Bachelor of Information Systems">Bachelor of Information Systems</option>
+                        <option value="Bachelor of Business Adminstration">Bachelor of Business Adminstration</option>
+                        <option value="Bachelor of Art and Design">Bachelor of Art and Design</option>
+                        <option value="Bachelor of Procurement and Logistics">Bachelor of Procurement and Logistics</option>               
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="password" required>
+                        <button type="button" class="toggle-password" onclick="togglePassword('password')">Show</button>
+                    </div>
+                    <small class="help-text">Must be at least 6 characters long.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-container">
+                        <input type="password" id="confirmPassword" required>
+                        <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword')">Show</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn primary-btn block-btn">Register Student</button>
+            </form>
+            <p class="form-footer">Already registered? <a href="login.html" style="text-decoration: none;border-radius: 10px;color: black;background-color: rgb(141, 141, 239);">Login here</a></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

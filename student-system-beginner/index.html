@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Student Management System</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html" id="loginLink">Login</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero-section" id="guestView">
+            <h1>Welcome to the Student Management System</h1>
+            <p>An integrated solution for Academic tracking.</p>
+            <div class="hero-buttons">
+                <a href="register.html" class="btn primary-btn">Create Account</a>
+                <a href="login.html" class="btn secondary-btn">Portal Login</a>
+            </div>
+        </section>
+
+        <section class="dashboard-section hidden" id="dashboardView">
+            <div class="dashboard-header">
+                <h2>Welcome Back, <span id="studentName">Student</span>!</h2>
+                <button onclick="logout()" class="btn danger-btn">Logout</button>
+            </div>
+            
+            <div class="profile-card">
+                <h3>Your Registration Profile</h3>
+                <div class="profile-grid">
+                    <div><strong>Full Name:</strong> <span id="profileName">-</span></div>
+                    <div><strong>Reg Number:</strong> <span id="profileReg">-</span></div>
+                    <div><strong>Email:</strong> <span id="profileEmail">-</span></div>
+                    <div><strong>Gender:</strong> <span id="profileGender">-</span></div>
+                    <div><strong>Course:</strong> <span id="profileCourse">-</span></div>
+                    <div><strong>Academic Year:</strong> <span id="profileYear">-</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
